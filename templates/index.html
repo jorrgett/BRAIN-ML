@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>¡Bienvenido/a! BRAINLY-DL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script src="https://kit.fontawesome.com/dbce5e707c.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="static/css/main.css" />
+		<noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+		<link href="{{ url_for('static', filename='css/test.css') }}" rel="stylesheet">
+		<script src="{{ url_for('static', filename='js/newjs.js') }}" type="text/javascript"></script>
+	</head>
+
+	<body class="is-preload">
+			<div id="wrapper">
+					<header id="header">
+						<div class="logo">
+							<i class="fa-solid fa-heartbeat fa-2xl"></i>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>¡HOLA!<BR/ >
+									SOY BRAINLY</h1>
+								<p>un sistema de diagnóstico asistido por ordenador.<br />
+									para la detección de tumores cerebrales.</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Sobre Mí</a></li>
+								<li><a href="#work">Objetivo</a></li>
+								<li><a href="#about">Manual</a></li>
+								<li><a href="#contact">Prueba</a></li>
+							</ul>
+						</nav>
+					</header>
+
+					<div id="main">
+							<article id="intro">
+								<h2 class="major">Brainly</h2> <br />
+								<span class="image main"><img src="static/images/pic01.jpg" alt="" /></span>
+								<p>Brainly es una plataforma de diagnóstico asistido por computadora donde las personas pueden diagnosticar la existencia de tumores cerebrales con un solo clic. Se utilizan técnicas de Deep Learning y Machine Learning para detectar el patrón de diversas resonancias cerebrales con los registros médicos electrónicos del paciente y proporcionar información de diversas anomalías.</p>
+								<p>En esta plataforma, se está abordando por ahora la detección de tumores cerebrales mediante U-Net, sin embargo, el objetivo de todo esto es expandir la detección computarizada a muchas otras enfermedades como la detección de malaria, el cáncer de piel, la detección de enfermedades cardíacas o la neumonía. Se han aplicado diferentes modelos de última generación para lograr una buena precisión de los modelos.</p>
+							</article>
+
+							<article id="work">
+								<h2 class="major">Público Objetivo y <br> Características</h2>
+								<span class="image main"><img src="static/images/pic02.jpg" alt="" /></span>
+								<ul>
+									<li>Nuestro público objetivo son las personas que desean chequeos médicos rápidos. Como todos sabemos, Internet está disponible para la mayoría de las personas, gracias a esto pueden ir y realizar pruebas.</li>
+									<li>Médicos que desean recomendar pacientes para su enfermedad en línea, ya que el proceso será más fácil sin pérdida de ningún documento médico.</li>
+								</ul>
+								<h3>Características Únicas</h3>
+								<ol>
+									<li>Fácil de usar.</li>
+									<li>Obtenga un informe instantáneo del diagnóstico.</li>
+									<li>Modelos ligeros de aprendizaje automático y aprendizaje profundo.</li>
+									<li>Proporciona un soporte multiplataforma.</li>
+								</ol>
+							</article>
+
+							<article id="about">
+								<h2 class="major">Instrucciones</h2>
+								<span class="image main"><img src="static/images/pic03.jpg" alt="" /></span>
+								<ol>
+									<li>Haga click en la pestaña <b>"prueba"</b>.</li>
+									<li>Seleccione la imágen para el diagnóstico.</li>
+									<li>La imágen debe de estar en formato <b>.png, .jpg, .jpeg</b>.</li>
+									<li>La imágen no debe pasar de 500 x 500 pixeles.</li>
+									<li>Una vez seleccionada la imagén haga click en el botón emergente <b>"procesar"</b>.</li>
+									<li>Obtenga sus resultados.</li>
+								</ol>
+							</article>
+
+							<article id="contact">
+								<h2 class="major">Diagnóstico</h2>
+								<center>
+									<br><h3>Nos preocupamos por tu salud.</h3><br>
+										<form id="upload-file" method="post" enctype="multipart/form-data">
+											 <input type="file" name="file" class="button primary icon solid fa-download" id="imageUpload" accept=".png, .jpg, .jpeg">
+										</form>
+	
+										<div class="image-section" style="display:none;">
+											 <img id="imagePreview"  class="img-responsive" src="#" style="width:300px;height:300px;"/><br><br>
+											 <div>
+												<button type="button" class="btn btn-info btn-lg " id="btn-predict">Procesar</button>
+											 </div>
+										</div>
+			
+										<div class="loader" style="display:none;"></div>
+									
+										<h3 id="result">
+											<span></span>
+										</h3>
+								</center><br><br>
+							</article>
+					</div>
+
+					<footer id="footer">
+						<p class="copyright">&copy; 96% precisión general || +1078 modelo de datos.</p>
+					</footer>
+			</div>
+
+			<div id="bg"></div>
+
+			<script src="static/js/jquery.min.js"></script>
+			<script src="static/js/browser.min.js"></script>
+			<script src="static/js/breakpoints.min.js"></script>
+			<script src="static/js/util.js"></script>
+			<script src="static/js/main.js"></script>
+	</body>
+</html>
